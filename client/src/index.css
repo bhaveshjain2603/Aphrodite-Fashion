@@ -7,6 +7,7 @@
 
 html {
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
 }
 
 @supports (font-variation-settings: normal) {
@@ -16,7 +17,7 @@ html {
 }
 
 .app {
-  @apply relative w-full h-screen overflow-hidden;
+  @apply relative w-full h-screen;
 }
 
 .home {
@@ -24,11 +25,11 @@ html {
 }
 
 .home-content {
-  @apply flex-1 xl:justify-center justify-start flex flex-col gap-10;
+  @apply flex-1 xl:justify-center justify-start flex flex-col gap-4;
 }
 
 .head-text {
-  @apply xl:text-[10rem] text-[6rem] xl:leading-[11rem] leading-[7rem] font-black text-black;
+  @apply xl:text-[4rem] text-[6rem] font-black text-slate-200;
 }
 
 .download-btn {
@@ -56,7 +57,7 @@ html {
 }
 
 .filepicker-label {
-  @apply border border-gray-300 py-1.5 px-2 rounded-md shadow-sm text-xs text-gray-700 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 cursor-pointer w-fit;
+  @apply border border-gray-300 py-1.5 px-2 rounded-md shadow-sm text-xs text-white focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 cursor-pointer w-fit;
 }
 
 .tab-btn {
@@ -89,4 +90,16 @@ input[type="file"] {
 
 .sketch-picker > div:nth-child(3) {
   display: none !important;
+}
+
+.social-link{
+  @apply text-xl
+}
+
+.footer-list{
+  @apply grid gap-3
+}
+
+.footer-link{
+  @apply text-gray-200 hover:text-yellow-300 text-sm
 }
