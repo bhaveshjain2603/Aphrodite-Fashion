@@ -1,13 +1,25 @@
-import Canvas from './canvas';
+import TShirtCanvas from './canvas/TShirt';
 import Customizer from './pages/Customizer';
-import Home from './pages/Home'
+import TshirtCustomize from './pages/TshirtCustomize'
+import About from './pages/About';
+import Shirt from './pages/Shirt'
+import Hoodie from './pages/Hoodie'
+import ZipperJackets from './pages/ZipperJackets'
+import JoinCommunity from './pages/JoinCommunity';
+import Footer from './pages/Footer'
 
 function App() {
   return (
     <main className="app transition-all ease-in">
-      <Home />
-      <Canvas />
+      <TshirtCustomize />
+      <TShirtCanvas />
       <Customizer />
+      <About />
+      <Shirt />
+      <Hoodie />
+      <JoinCommunity />
+      <Footer />
+      {/* <ZipperJackets /> */}
     </main>
   )
 }
